@@ -2,19 +2,24 @@
 #include <stdlib.h>
 #include <time.h>
 
-/**d for the code  goes there */
+/*
+ * main - Entry point of the program.
+ * Description: This function is the entry point for the program.   
+ * Return: 0 on success
+ */
 
-/**
-* main code - store and print variable n is positive or negative.
-* Return:0 (Sucessful)
-*/
-
+/* this is the main function */
 int main(void)
+/* this is the main function */
 {
+/* this is the main function */
 int n;
 
+/* this is the main function */
 srand(time(0));
 n = rand() - RAND_MAX / 2;
+
+/* Code statements */
 if (n > 0)
 	printf("%d is positive\n", n);
 else if (n == 0)
