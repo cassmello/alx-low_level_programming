@@ -8,7 +8,9 @@
  */
 
 int main(void)
+/* your code goes there */
 {
+/* your code goes there */
 	int n;
 
 	int m;
@@ -21,7 +23,7 @@ int main(void)
 		printf("Last digit of %d is %d and is greater than 5\n", n, m);
 	if (m == 0)
 		printf("Last digit of %d is %d and is  0\n", n, m);
-	if (m < 6 && m != 0)
+	   (m < 6 && m != 0)
 		printf("Last digt of %d is %d and is less than 6 and not 0\n", n, m); 
 	return (0);
 }
