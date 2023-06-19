@@ -4,10 +4,14 @@
  * return: 0 (achived)
  */
 
-
-int main(void)
 /*for betty documentation*/
+int main(void)
+/**
+ * main - Write a C program that prints
+ * return: 0 (achived)
+ */
 {
+/*for betty documentation*/
 printf("Size of char: %lu byte\n", sizeof(char));
 printf("Size of int: %lu bytes\n", sizeof(int));
 printf("Size of long int: %lu bytes\n", sizeof(long int));
