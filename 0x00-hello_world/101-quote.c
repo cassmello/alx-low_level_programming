@@ -16,8 +16,9 @@ void write_str_to_stderr(const char *str) {
     syscall(SYS_write, STDERR_FILENO, str, len);
 }
 
-int main(void) {
-    const char *message = "\"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+int main(void)
+{
+    const char *message = "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
     write_str_to_stderr(message);
     return 1;
 }
