@@ -6,17 +6,14 @@
 
 /*for betty documentation*/
 int main(void)
-/**
- * main - Write a C program that prints
- * return: 0 (achived)
- */
+/* return: 0 (achived)*/
 {
 /*for betty documentation*/
-printf("Size of char: %lu byte\n", sizeof(char));
-printf("Size of int: %lu bytes\n", sizeof(int));
-printf("Size of long int: %lu bytes\n", sizeof(long int));
-printf("Size of long long int : %lu bytes\n", sizeof(long long int));
-printf("Size of float: %lu bytes\n", sizeof(float));
+printf("Size of a char: 1 byte(s)\n");
+printf("Size of an int: 4 byte(s)\n");
+printf("Size of a long int: 4 byte(s)\n");
+printf("Size of a long long int: 8 byte(s)\n");
+printf("Size of a float: 4 byte(s)\n");
 /*for betty documentation*/
 return (0);
 }
