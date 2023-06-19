@@ -1,10 +1,12 @@
 #include <stdio.h>
 /**
- * main - Write a C program that prints
- * return: 0 (achived)
+ * main - Entry point
+ *
+ * Description: 'the program's descriptio'
+ *
+ * Return: Always 0 (Success)
  */
 
-/*for betty documentation*/
 int main(void)
 /*Return 0 to indicate successful execution*/
 {
