@@ -1,11 +1,24 @@
 #include <stdio.h>
 #include <unistd.h>
+#include <sys/syscall.h>
+
+#define STDERR_FILENO 2
 /**
- * main - Write a C program that prints exactly
- * Return 1 (success)0
- */
-int main(void)
-{
-fput("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n", stdout);
-return (1);
+ * main - Write a C program that print
+ * return:0 (achived)
+*/
+
+void write_str_to_stderr(const char *str) {
+    size_t len = 0;
+    while (str[len] != '\0')
+        len++;
+
+    syscall(SYS_write, STDERR_FILENO, str, len);
 }
+
+int main(void) {
+    const char *message = "\"and that piece of art is useful\" - Dora Korpar, 2015-10-19\n";
+    write_str_to_stderr(message);
+    return 1;
+}
+
