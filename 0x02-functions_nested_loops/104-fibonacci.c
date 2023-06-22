@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - fibonacci 
+ * main - fibonacci
  *
- * 
+ *
  *
  * Return:  (Success)
  */
