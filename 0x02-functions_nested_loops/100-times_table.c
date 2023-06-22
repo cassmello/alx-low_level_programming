@@ -1,8 +1,10 @@
 #include "main.h"
 
 /**
- * main - prints the n times table, starting with 0
- * 
+ * print_times_table - main funtion
+ *
+ * @n:is a parameter
+ *
  * return: 0 (success)
  */
 
