@@ -2,7 +2,7 @@
 
 /**
  * main - Lists all the natural numbers
- *        
+ *
  *
  * Return: Always 0.
  */
