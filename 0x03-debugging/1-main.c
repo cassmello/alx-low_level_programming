@@ -1,7 +1,7 @@
 #include <stdio.h>
 /**
 * main - infinite loop
-* return: 0
+* Return: 0 (SUCCESS)
 */
 
 int main(void)
