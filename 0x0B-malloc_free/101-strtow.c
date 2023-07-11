@@ -1,19 +1,19 @@
 #include <stdlib.h>
 #include "main.h"
-		
-/**		
- *count_word - helper function to count the number of words in a string		
- *@s: parameter 		
+
+/**
+ *count_word - helper function to count the number of words in a string
+ *@s: parameter
  *Return: result (success)
  **/
 
 int count_word(char *s)
 {
 		int flag, c, w;
-		
+
 		flag = 0;
 		w = 0;
-		
+
 		for (c = 0; s[c] != '\0'; c++)
 		{
 			if (s[c] == ' ')
@@ -24,18 +24,16 @@ int count_word(char *s)
 				w++;
 			}
 		}
-		
+
 		return (w);
 }
 
 
 
 /**
-
  *strtow - splits a string into words
  * @str: string to split
  * Return: pointer to an array of strings (Success)
- * or NULL (Error)
  */
 
 char **strtow(char *str)
@@ -45,16 +43,12 @@ char **strtow(char *str)
 
 	while (*(str + len))
 		len++;
-
 	words = count_word(str);
 	if (words == 0)
 		return (NULL);
-
 	mat = (char **) malloc(sizeof(char *) * (words + 1));
-
 	if (mat == NULL)
 		return (NULL);
-
 	for (i = 0; i <= len; i++)
 	{
 		if (str[i] == ' ' || str[i] == '\0')
@@ -63,13 +57,10 @@ char **strtow(char *str)
 			{
 				end = i;
 				tmp = (char *) malloc(sizeof(char) * (c + 1));
-
 				if (tmp == NULL)
 					return (NULL);
-
 				while (begin < end)
 					*tmp++ = str[begin++];
-
 				*tmp = '\0';
 				mat[k] = tmp - c;
 				k++;
@@ -77,11 +68,8 @@ char **strtow(char *str)
 			}
 		}
 		else if (c++ == 0)
-
 			begin = i;
-
 	}
-
 	mat[k] = NULL;
 	return (mat);
 }

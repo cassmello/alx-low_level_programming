@@ -1,0 +1,5 @@
+trtow.c:82: WARNING: More than 40 lines in a function
+101-strtow.c:83: WARNING: More than 40 lines in a function
+101-strtow.c:84: WARNING: More than 40 lines in a function
+total: 0 errors, 4 warnings, 85 lines checked
+
